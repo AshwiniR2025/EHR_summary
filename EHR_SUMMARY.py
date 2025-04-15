@@ -96,10 +96,7 @@ if user_prompt:
         st.write("🧠 **Answer:**", response['answer'])
         st.caption(f"⏱️ Response time: {time.process_time() - start:.2f}s")
 
-        with st.expander("📂 Document Matches"):
-            for i, doc in enumerate(response['context']):
-                st.markdown(doc.page_content)
-                st.markdown("---")
+       
 
 
 
